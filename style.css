@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(46, 46, 46);
+    font-family: 'Roboto';
+}
+
+.listaDeTarefas{
+    width: 450px;
+}
+
+.listaDeTarefas span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(27, 27, 27);
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 14px;
+}
+
+.listaDeTarefas .deleteIcon {
+    padding: 8px;
+    border-radius: 100%;
+    font-size: 14px;
+    background-color: rgb(46, 46, 46);
+}
+
+.listaDeTarefas .deleteIcon:hover {
+    color: rgb(182, 65, 65);
+}
+
+.submitContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    width: 450px;
+    padding: 12px 0px;
+}
+
+.submitContainer button {
+    padding: 10px 14px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 100%;
+    background-color: rgb(0, 132, 255);
+    cursor: pointer;
+}
+
+.submitContainer button:hover {
+    background-color: rgb(2, 113, 218);
+}
+
+.submitContainer .input {
+    flex: 1;
+    padding: 8px;
+    background-color: rgb(27, 27, 27);
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    caret-color: white;
+    color: white;
+}
+
+.submitContainer .input::placeholder {
+    color: rgba(255, 255, 255, 0.336);
+}
