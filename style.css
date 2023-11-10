@@ -8,14 +8,9 @@
 
 body {
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center;
     background-color: rgb(46, 46, 46);
     font-family: 'Roboto';
-}
-
-.listaDeTarefas{
-    width: 450px;
 }
 
 .listaDeTarefas span {
@@ -31,14 +26,14 @@ body {
     margin-bottom: 14px;
 }
 
-.listaDeTarefas .deleteIcon {
+.listaDeTarefas .deleteButton {
     padding: 10px 11px;
     border-radius: 100%;
     font-size: 14px;
     background-color: rgb(46, 46, 46);
 }
 
-.listaDeTarefas .deleteIcon:hover {
+.listaDeTarefas .deleteButton:hover {
     color: rgb(182, 65, 65);
 }
 
@@ -50,7 +45,7 @@ body {
     padding: 12px 0px;
 }
 
-.submitContainer button {
+.submitContainer .submitButton {
     padding: 12px 15px;
     border: none;
     color: white;
@@ -59,9 +54,26 @@ body {
     background-color: rgb(0, 132, 255);
     cursor: pointer;
 }
-
-.submitContainer button:hover {
+.submitContainer .submitButton:hover {
     background-color: rgb(2, 113, 218);
+}
+
+.submitContainer .clearButton {
+    padding: 12px 15px;
+    border: none;
+    color: white;
+    font-size: 22px;
+    border-radius: 100%;
+    background-color: rgb(228, 66, 37);
+    cursor: pointer;
+}
+.submitContainer .clearButton:hover {
+    background-color: rgb(199, 57, 31);
+}
+
+.submitContainer .clearButton.disabled {
+    background-color: rgb(216, 130, 115);
+    cursor: not-allowed;
 }
 
 .submitContainer .input {
@@ -78,4 +90,29 @@ body {
 
 .submitContainer .input::placeholder {
     color: rgba(255, 255, 255, 0.336);
+}
+
+@media(max-width: 768px) {
+    body {
+        width: 100%;
+    }
+
+    body .container {
+        width: 100%;
+        padding: 18px;
+    }
+
+    .submitContainer .submitButton {
+        font-size: 14px;
+        padding: 8px 11px;
+    }
+
+    .submitContainer .clearButton {
+        font-size: 14px;
+        padding: 8px 11px;
+    }
+
+    .submitContainer {
+        width: 100%;
+    }
 }
