@@ -22,4 +22,3 @@ input.addEventListener("keydown", function(e) {
       submitItem();
     }
 });
-
