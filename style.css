@@ -13,27 +13,27 @@ body {
     font-family: 'Roboto';
 }
 
-.listaDeTarefas span {
+.listaDeTarefas li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 16px;
     color: white;
     background-color: rgb(27, 27, 27);
     border-radius: 8px;
-    padding: 10px;
+    padding: 12px;
     cursor: pointer;
     margin-bottom: 14px;
 }
 
-.listaDeTarefas .deleteButton {
-    padding: 10px 11px;
-    border-radius: 100%;
+.listaDeTarefas li span i {
+    padding: 4px;
+    border-radius: 8px;
     font-size: 14px;
     background-color: rgb(46, 46, 46);
 }
 
-.listaDeTarefas .deleteButton:hover {
+.listaDeTarefas li span i:hover {
     color: rgb(182, 65, 65);
 }
 
@@ -50,7 +50,7 @@ body {
     border: none;
     color: white;
     font-size: 22px;
-    border-radius: 100%;
+    border-radius: 8px;
     background-color: rgb(0, 132, 255);
     cursor: pointer;
 }
@@ -63,7 +63,7 @@ body {
     border: none;
     color: white;
     font-size: 22px;
-    border-radius: 100%;
+    border-radius: 8px;
     background-color: rgb(228, 66, 37);
     cursor: pointer;
 }
