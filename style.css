@@ -9,8 +9,13 @@
 body {
     display: flex;
     justify-content: center;
+    padding: 28px;
     background-color: rgb(46, 46, 46);
     font-family: 'Roboto';
+}
+
+.completed {
+    color: rgb(117, 240, 117);
 }
 
 .listaDeTarefas li {
@@ -21,7 +26,7 @@ body {
     color: white;
     background-color: rgb(27, 27, 27);
     border-radius: 8px;
-    padding: 12px;
+    padding: 15px;
     cursor: pointer;
     margin-bottom: 14px;
 }
@@ -42,7 +47,7 @@ body {
     justify-content: space-between;
     gap: 16px;
     width: 450px;
-    padding: 12px 0px;
+    margin-bottom: 14px;
 }
 
 .submitContainer .submitButton {
@@ -78,7 +83,7 @@ body {
 
 .submitContainer .input {
     flex: 1;
-    padding: 8px;
+    padding: 8px 15px;
     font-size: 16px;
     background-color: rgb(27, 27, 27);
     outline: none;
@@ -95,24 +100,18 @@ body {
 @media(max-width: 768px) {
     body {
         width: 100%;
+        padding: 12px;
     }
 
     body .container {
         width: 100%;
-        padding: 18px;
-    }
-
-    .submitContainer .submitButton {
-        font-size: 14px;
-        padding: 8px 11px;
-    }
-
-    .submitContainer .clearButton {
-        font-size: 14px;
-        padding: 8px 11px;
     }
 
     .submitContainer {
+        width: 100%;
+    }
+
+    .submitContainer input {
         width: 100%;
     }
 }
