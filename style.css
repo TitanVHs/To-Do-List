@@ -16,6 +16,7 @@ body {
 
 .completed {
     color: rgb(117, 240, 117);
+    text-decoration: line-through;
 }
 
 .listaDeTarefas li {
@@ -31,6 +32,10 @@ body {
     margin-bottom: 14px;
 }
 
+.listaDeTarefas li:hover div {
+    color: rgb(117, 240, 117);
+}
+
 .listaDeTarefas li span i {
     padding: 4px;
     border-radius: 8px;
@@ -40,6 +45,12 @@ body {
 
 .listaDeTarefas li span i:hover {
     color: rgb(182, 65, 65);
+}
+
+.tasksAmount {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 16px;
 }
 
 .submitContainer {
@@ -64,6 +75,7 @@ body {
 }
 
 .submitContainer .clearButton {
+    display: none;
     padding: 12px 15px;
     border: none;
     color: white;
@@ -74,11 +86,6 @@ body {
 }
 .submitContainer .clearButton:hover {
     background-color: rgb(199, 57, 31);
-}
-
-.submitContainer .clearButton.disabled {
-    background-color: rgb(216, 130, 115);
-    cursor: not-allowed;
 }
 
 .submitContainer .input {
