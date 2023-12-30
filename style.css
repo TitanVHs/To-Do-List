@@ -32,10 +32,6 @@ body {
     margin-bottom: 14px;
 }
 
-.listaDeTarefas li:hover div {
-    color: rgb(117, 240, 117);
-}
-
 .listaDeTarefas li span i {
     padding: 4px;
     border-radius: 8px;
